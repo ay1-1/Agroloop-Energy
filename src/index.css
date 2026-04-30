@@ -13,9 +13,13 @@
 }
 
 @layer base {
-  body {
-    @apply bg-brand-charcoal text-white font-sans antialiased overflow-x-hidden selection:bg-brand-green selection:text-white;
-  }
+  html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-brand-charcoal text-white font-sans antialiased overflow-x-hidden selection:bg-brand-green selection:text-white min-h-screen w-full flex flex-col;
+}
   
   h1, h2, h3, h4 {
     @apply font-sans font-black tracking-tighter uppercase;
